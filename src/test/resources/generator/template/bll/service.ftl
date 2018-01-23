@@ -5,7 +5,6 @@
 package ${servicePackage};
 
 import ${DBModelPackage}.${modelNameUpperCamel};
-import ${corePackage}.ISimpleService;
 
 /**
  * Created by ${author} on ${date}.

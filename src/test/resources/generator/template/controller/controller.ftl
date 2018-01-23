@@ -5,17 +5,16 @@
 <#--import ${basePackage}.service.${modelNameUpperCamel}Service;-->
 <#--import com.github.pagehelper.PageHelper;-->
 <#--import com.github.pagehelper.PageInfo;-->
-<#--import org.springframework.web.bind.annotation.PostMapping;-->
-<#--import org.springframework.web.bind.annotation.RequestMapping;-->
-<#--import org.springframework.web.bind.annotation.RequestParam;-->
-<#--import org.springframework.web.bind.annotation.RestController;-->
+<#--import org.springframework.controller.bind.annotation.PostMapping;-->
+<#--import org.springframework.controller.bind.annotation.RequestMapping;-->
+<#--import org.springframework.controller.bind.annotation.RequestParam;-->
+<#--import org.springframework.controller.bind.annotation.RestController;-->
 
 package ${controllerPackage};
 
-import ${servicePackage}.I${serviceModelName}Service;
-import ${DBModelPackage}.${modelNameUpperCamel};
-import ${corePackage}.Result;
-import ${corePackage}.ResultGenerator;
+import javax.annotation.Resource;
+import java.util.List;
+
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,8 +22,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
-import java.util.List;
+import ${servicePackage}.I${serviceModelName}Service;
+import ${DBModelPackage}.${modelNameUpperCamel};
+import ${corePackage}.Result;
+import ${corePackage}.ResultGenerator;
 
 /**
 * Created by ${author} on ${date}.
